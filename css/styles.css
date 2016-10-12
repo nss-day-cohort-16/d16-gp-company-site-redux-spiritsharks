@@ -1,18 +1,81 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Muli', sans-serif;
 }
 
 
+/*----- HEADER & NAV ------- */
 header {
-	
+	border-bottom: 1px solid gray;
+	width: 100%;
+	margin-top: 40px;
+	height: 150px;
 }
 
+#logo {
+	width: 300px;
+	height: 150px;
+	float: left;
+	margin: 0 0 15px 100px;
+}
+
+header img,header nav {
+    display: inline-block;
+    vertical-align: middle;
+ }
+
+nav {
+	margin: 50px 0 0 100px;
+	padding: 20px;
+	display: inline;
+	vertical-align: middle;
+}
+
+nav ul {
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline;
+	padding: 10px;
+
+}
+
+nav ul li a {
+	color: gray;
+	text-decoration: none;
+	padding: 0 15px;
+}
+
+
+
+/*----- BODY CONTENT ------- */
 main {
 	width: 70%;
-	margin: 0 auto;
+	margin: 50px auto;
+	clear: both;
 }
 
 h1 {
-	font-size: 1.2em;
+	font-size: 1.5em;
+	color: gray;
+	text-align: center;
+	letter-spacing: 1px;
 }
 
+
+a {
+	color: navy;
+	text-decoration: none;
+}
+
+a:hover {
+	color: goldenrod;
+	text-decoration: none;
+}
+
+
+/*----- FOOTER------- */
+footer {
+	text-align: center;
+}
