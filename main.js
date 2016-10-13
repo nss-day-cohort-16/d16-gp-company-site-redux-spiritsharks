@@ -59,10 +59,10 @@ var seventhlight = {
 }
 
 var eighthlight = {
-	img: "images/leglamp.jpg",
-	title: "Not a Finger",
+	img: "images/ufolamp.jpg",
+	title: "UFO Lamp",
 	price: 100,
-	descrip: "Fragile... must be Italian"
+	descrip: "We come in peace"
 }
 
 // push the variables into the array
