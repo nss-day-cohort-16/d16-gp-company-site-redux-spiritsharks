@@ -59,10 +59,31 @@ main {
 	clear: both;
 }
 
+/*
+#tesla {
+	width: 300px;
+}
+
+#edison {
+	clear: both;
+	width: 300px;
+}	*/
+
+#container {
+	float: right;
+	margin: 0 0 20px 20px;
+	width: 300px;
+}
+
+#container img {
+	width: 100%;
+}
+
 .callout {
 	color: goldenrod;
 	text-align: center;
 	line-height: 14px;
+
 }
 
 h1 {
@@ -146,6 +167,7 @@ aside {
 /*----- FOOTER------- */
 footer {
 	text-align: center;
+	clear: both;
 }
 
 
