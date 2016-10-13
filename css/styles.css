@@ -175,8 +175,13 @@ article {
 	float: left;
 	margin-left: 20px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 	height: 200px;
 	text-align: center;
+}
+
+article img {
+	max-height: 300px;
 }
 
 .title {
