@@ -83,16 +83,99 @@ a:hover {
 }
 
 section {
-	border-color: black;
+	border-color: orange;
+	box-shadow: 4px 7px 4px gray;
 	border-style: solid;
 	margin: 1rem;
 	width: 100%;
+	float:top;
 	height: 50%;
-	display : inline-block;
+	display :inline-block;
 }
+
+
+.mood {
+	float: left;
+	position: right;
+	border-color:orange;
+	width:200px;
+	margin: auto;
+	-webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+
+
+}
+
+
+.electsources {
+	float: left;
+	border-color:orange;
+	width:200px;
+	margin:1rem;
+}
+
+.led {
+	float: left;
+	border-color:orange;
+	width:200px;
+	margin:1rem;
+}
+
+
+
+.silence {
+	float: left;
+	border-color:orange;
+	width:100px;
+	margin:1rem;
+}
+
+
+.startrekmood {
+	float: left;
+	border-color:orange;
+	width:100px;
+	margin:1rem;
+}
+aside {
+	vertical-align: left;
+}
+
 
 
 /*----- FOOTER------- */
 footer {
 	text-align: center;
+}
+
+
+/***CSS FOR  MAIN.JS  FILE ******/
+
+#products {
+	border-color:black;
+	border-style: solid;
+}
+
+.proname {
+	border-style: solid;
+	border-color: black;
+	background-color:gray;
+}
+ 	
+.description {
+	border-style: solid;
+	border-color: black;
+	background-color:gray;
+}
+
+.productprice {
+	border-style: solid;
+	border-color: black;
+	background-color:gray;
+}
+
+.price	{
+	border-style: solid;
+	border-color: black;
+	background-color:gray;
 }
