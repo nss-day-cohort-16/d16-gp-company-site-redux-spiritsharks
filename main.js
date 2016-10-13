@@ -2,34 +2,67 @@
 
 var lights = []; 
 
-var myImage = new Image();
-myImage.src = "images/dg.jpg";
-console.log(myImage);
-
-var firstlight = { 
-	title: "Edison",
-	price: 8,
-	descrip: "blahalksdjf;lakjs;dlkff"
-}                 
+// uh, this code doesn't work. we tried it.
+//var myImage = new Image();
+//myImage.src = "images/dg.jpg";
+//console.log(myImage);
 
 // list some variables
 
+var firstlight = { 
+	img: "images/st.jpg",
+	title: "Star Trek Lamp",
+	price: 8,
+	descrip: "Engage!"
+}                 
+
 var secondlight = {
-	title: "Victorian",
+	img: "images/ns.jpg",
+	title: "The Nose",
 	price: 9,
-	descrip: "alsdjf;lakjsdf"
+	descrip: "That's kinda gross"
 }
 
 var thirdlight = {
-	title: "Torch",
+	img: "images/r2d2.jpg",
+	title: "R2D2",
 	price: 10,
-	descrip: "alsjdfl;akjsdf"
+	descrip: "Beep Boop"
 }
 
 var fourthlight = {
-	title: "Matches",
-	price: "4",
-	descrip: "alsjdlfalaksjd"
+	img: "images/tc.jpg",
+	title: "Tesla Coil",
+	price: 14,
+	descrip: "Well, whatever"
+}
+
+var fifthlight = {
+	img: "images/dg.jpg",
+	title: "What's up, Dog",
+	price: 1,
+	descrip: "Dog poop"
+}
+
+var sixthlight = {
+	img: "images/ch.jpg",
+	title: "Cheeseburger",
+	price: 2000,
+	descrip: "i can haz cheezeburger"
+}
+
+var seventhlight = {
+	img: "images/b.jpg",
+	title: "The White Tree of Gondor",
+	price: 15,
+	descrip: "You shall not pass"
+}
+
+var eighthlight = {
+	img: "images/leglamp.jpg",
+	title: "Not a Finger",
+	price: 100,
+	descrip: "Fragile... must be Italian"
 }
 
 // push the variables into the array
@@ -38,6 +71,11 @@ lights.push(firstlight);
 lights.push(secondlight);
 lights.push(thirdlight);
 lights.push(fourthlight);
+lights.push(fifthlight);
+lights.push(sixthlight);
+lights.push(seventhlight);
+lights.push(eighthlight);
+
 
 //How many items are in the arrary?
 //console.log (lights.length);
@@ -48,6 +86,7 @@ for (var i = 0; i < lights.length; i++) {
 	var price = lights[i].price;
 	var title = lights[i].title;
 	var descrip = lights[i].descrip;
+	var img = lights[i].img;
 
 	//Is it pulling all the subitems?
 	//console.log("Title: " + title + "Description: " + descrip + 
@@ -62,7 +101,7 @@ for (var i = 0; i < lights.length; i++) {
 		
 		"<article>" +
 
-		'<img src="'+ myImage.src +'">' +
+		'<img src="'+/* myImage.src */ img +'">' +
 
 		"<div class='title'>"  + 
 		title + "</div>" + 
