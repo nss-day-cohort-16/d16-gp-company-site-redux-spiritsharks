@@ -117,7 +117,7 @@ section {
 
 .mood {
 	float: left;
-	position: right;
+	/*position: right;*/
 	border-color:orange;
 	width:200px;
 	margin: auto;
@@ -158,46 +158,43 @@ section {
 	width:100px;
 	margin:1rem;
 }
+
+/*
 aside {
 	vertical-align: left;
 }
+*/
 
+
+/* ------ PRODUCTS ---------- */
+
+
+article {
+	background: white;
+	width: 30%;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	height: 200px;
+	text-align: center;
+}
+
+.title {
+	margin: 10px 0;
+}
+
+.description {
+	padding: 10px;
+
+}
+
+.price {
+	font-weight: bold;
+}
 
 
 /*----- FOOTER------- */
 footer {
 	text-align: center;
 	clear: both;
-}
-
-
-/***CSS FOR  MAIN.JS  FILE ******/
-
-#products {
-	border-color:black;
-	border-style: solid;
-}
-
-.proname {
-	border-style: solid;
-	border-color: black;
-	background-color:gray;
-}
- 	
-.description {
-	border-style: solid;
-	border-color: black;
-	background-color:gray;
-}
-
-.productprice {
-	border-style: solid;
-	border-color: black;
-	background-color:gray;
-}
-
-.price	{
-	border-style: solid;
-	border-color: black;
-	background-color:gray;
 }

@@ -1,109 +1,76 @@
-var  arrProduct = [];
+// set the array
 
+var lights = []; 
 
-var b = {
-		name: "The Gandalf",
-		description: "You shall not pass",
-		price: "$101",
-		image: "images/b.jpg"
+var firstlight = { 
+	title: "Edison",
+	price: 8,
+	descrip: "blahalksdjf;lakjs;dlkff"
+}                 
+
+// list some variables
+
+var secondlight = {
+	title: "Victorian",
+	price: 9,
+	descrip: "alsdjf;lakjsdf"
 }
 
-var ch = {
-		name: "Cheeseburger",
-		description: "Rawr!",
-		price: "$101",
-		image: "images/ch.jpg"
+var thirdlight = {
+	title: "Torch",
+	price: 10,
+	descrip: "alsjdfl;akjsdf"
 }
 
-
-var dg = {
-		name: "Dog Poop",
-		description: "Woof!",
-		price: "$101",
-		image: "images/dg.jpg"
+var fourthlight = {
+	title: "Matches",
+	price: "4",
+	descrip: "alsjdlfalaksjd"
 }
 
+// push the variables into the array
 
-var leglamp  = {
-		name: "Leg Lamp",
-		description: "Fragile , must be Italian!",
-		price: "$1001",
-		image: "images/leglamp.jpg"
+lights.push(firstlight);
+lights.push(secondlight);
+lights.push(thirdlight);
+lights.push(fourthlight);
+
+//How many items are in the arrary?
+//console.log (lights.length);
+
+for (var i = 0; i < lights.length; i++) {
+	
+	//Set the looped variable
+	var price = lights[i].price;
+	var title = lights[i].title;
+	var descrip = lights[i].descrip;
+	var price = lights[i].price;
+
+	//Is it pulling all the subitems?
+	//console.log("Title: " + title + "Description: " + descrip + 
+	//	"Price: " + price);
+	//	
+	//	num.toString();
+
+
+	// style it up
+	var products = document.getElementById('products')
+		products = 
+		
+		"<article>" +
+
+		"<div class='title'>"  + 
+		title + "</div>" + 
+
+		"<div class='description'>" + 
+		descrip + "</div>" + 
+
+		"<div class='price'>"  + 
+		 "$ " + price + "</div>" +
+
+		"</article>";
+
+		//apply to the page
+		document.write(products);
 }
-
-
-var r2d2 = {
-		name: "r2d2.jpg",
-		description: "Beep Boop!",
-		price: "$101",
-		image: "images/r2d2.jpg"
-}
-
-
-var ns = {
-		name: "Nose",
-		description: "Not A Finger!",
-		price: "$101",
-		image: "images/ns.jpg"
-}
-
-
-var st = {
-		name: "Star Trek",
-		description: "Engage!",
-		price: "$101",
-		image: "images/st.jpg"
-}
-
-
-var tc = {
-		name: "Tesla Coil",
-		description: "The best source of light!",
-		price: "$101",
-		image: "srcimages/tc.jpg";
-}
-
-// check the array's number of objects 
-
-
-console.log(arrProduct.length);
-
-// push the classes into the array 
-
-arrProduct.push (b);
-arrProduct.push (ch); 
-arrProduct.push (dg); 
-arrProduct.push (leglamp); 
-arrProduct.push (r2d2); 
-arrProduct.push (ns); 
-arrProduct.push (st); 
-arrProduct.push (tc); 
-
-//print the length of the array's contents to confirm what's stored 
-
-
-console.log (arrProduct.length);
-
-// created div id with a new variable  
-
-for (i= 0; i < arrProduct.length; i++)
-
-{
-
-var name = arrProduct[i].name;
-var description = arrProduct[i].description;
-var image = arrProduct[i].image;
-var price = arrProduct[i].price;
-var products = document.getElementById('products')
-products = "<div class='proname'>"  + 
-		name + "</div>" + "<div class=product>" + 
-		image + "</div>" + "<div class='description'>" + 
-		description + "</div>" + "<div class='productprice'>" + 
-		price + "</div>" ;
-
-
-document.write('products');
-}
-
-
 
