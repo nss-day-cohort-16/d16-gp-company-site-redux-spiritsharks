@@ -2,6 +2,10 @@
 
 var lights = []; 
 
+var myImage = new Image();
+myImage.src = "images/dg.jpg";
+console.log(myImage);
+
 var firstlight = { 
 	title: "Edison",
 	price: 8,
@@ -44,7 +48,6 @@ for (var i = 0; i < lights.length; i++) {
 	var price = lights[i].price;
 	var title = lights[i].title;
 	var descrip = lights[i].descrip;
-	var price = lights[i].price;
 
 	//Is it pulling all the subitems?
 	//console.log("Title: " + title + "Description: " + descrip + 
@@ -58,6 +61,8 @@ for (var i = 0; i < lights.length; i++) {
 		products = 
 		
 		"<article>" +
+
+		'<img src="'+ myImage.src +'">' +
 
 		"<div class='title'>"  + 
 		title + "</div>" + 
